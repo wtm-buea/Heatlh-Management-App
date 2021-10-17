@@ -18,7 +18,7 @@ class CreatePatientsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('consultation_id');
-            $table->foreign('consulation_id')->references('id')->on('consultations');
+            $table->foreign('consultation_id')->references('id')->on('consultations');
             $table->timestamps();
         });
     }
