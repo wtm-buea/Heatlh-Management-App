@@ -2,49 +2,6 @@
 
 @section('content')
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-
-      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
-          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
-
-    </div>
-  </header><!-- End Header -->
-
-
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -54,7 +11,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+        <div class="carousel-item active" style="background-image: url({{asset ('img/slide/slide-1.jpg')}} )">
           <div class="container">
             <h2>Welcome to <span>Medicio</span></h2>
             <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
@@ -63,7 +20,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+        <div class="carousel-item" style="background-image: url({{asset('img/slide/slide-2.jpg')}})">
           <div class="container">
             <h2>Lorem Ipsum Dolor</h2>
             <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
@@ -72,7 +29,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+        <div class="carousel-item" style="background-image: url({{asset ('img/slide/slide-3.jpg')}})">
           <div class="container">
             <h2>Sequi ea ut et est quaerat</h2>
             <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
@@ -162,7 +119,7 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="{{asset('img/about.jpg')}}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -261,7 +218,7 @@
               <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
             </div>
           </div>
-          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("assets/img/features.jpg");' data-aos="zoom-in"></div>
+          <div class="image col-lg-6 order-1 order-lg-2" style="background-image: url({{asset ('img/features.jpg')}} )" data-aos="zoom-in"></div>
         </div>
 
       </div>
@@ -412,25 +369,25 @@
               <div class="tab-pane active show" id="tab-1">
                 <h3>Cardiology</h3>
                 <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                <img src="{{asset('img/departments-1.jpg')}}" alt="" class="img-fluid">
                 <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
               <div class="tab-pane" id="tab-2">
                 <h3>Neurology</h3>
                 <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('img/departments-2.jpg')}}" alt="" class="img-fluid">
                 <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
               <div class="tab-pane" id="tab-3">
                 <h3>Hepatology</h3>
                 <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('img/departments-3.jpg')}}" alt="" class="img-fluid">
                 <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
               <div class="tab-pane" id="tab-4">
                 <h3>Pediatrics</h3>
                 <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                <img src="{{asset ('img/departments-4.jpg')}}" alt="" class="img-fluid">
                 <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
             </div>
@@ -459,7 +416,7 @@
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="{{asset ('img/testimonials/testimonials-1.jpg')}}" class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
@@ -472,7 +429,7 @@
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="{{asset ('img/testimonials/testimonials-2.jpg')}}" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
@@ -485,7 +442,7 @@
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <img src="{{asset ('img/testimonials/testimonials-3.jpg')}}" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
@@ -498,7 +455,7 @@
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <img src="{{asset ('img/testimonials/testimonials-4.jpg')}}" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
@@ -511,7 +468,7 @@
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <img src="{{asset ('img/testimonials/testimonials-5.jpg')}}" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
@@ -538,7 +495,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
+                <img src="{{asset ('img/doctors/doctors-1.jpg')}}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -556,7 +513,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="">
+                <img src="{{asset ('img/doctors/doctors-2.jpg')}}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -574,7 +531,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="">
+                <img src="{{asset ('img/doctors/doctors-3.jpg')}}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -592,7 +549,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
+                <img src="{{asset ('img/doctors/doctors-4.jpg')}}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -623,14 +580,14 @@
 
         <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="{{asset ('img/gallery/gallery-1.jpg')}}"><img src="{{asset ('img/gallery/gallery-1.jpg')}}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="{{asset ('img/gallery/gallery-2.jpg')}}"><img src="{{asset ('img/gallery/gallery-2.jpg')}}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="{{asset ('img/gallery/gallery-3.jpg')}}"><img src="{{asset ('img/gallery/gallery-3.jpg')}}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="{{asset ('img/gallery/gallery-4.jpg')}}"><img src="{{asset ('img/gallery/gallery-4.jpg')}}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="{{asset ('img/gallery/gallery-5.jpg')}}"><img src="{{asset ('img/gallery/gallery-5.jpg')}}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="{{asset ('img/gallery/gallery-6.jpg')}}"><img src="{{asset ('img/gallery/gallery-6.jpg')}}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="{{asset ('img/gallery/gallery-7.jpg')}}"><img src="{{asset ('img/gallery/gallery-7.jpg')}}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="{{asset ('img/gallery/gallery-8.jpg')}}"><img src="{{asset ('img/gallery/gallery-8.jpg')}}" class="img-fluid" alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
