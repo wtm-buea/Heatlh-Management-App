@@ -31,3 +31,16 @@ A user indicates whether he or she is a  health care personnel or not in the reg
 
 
 
+## Installation
+1. Fork the project
+2. Clone the project; Find a location on your computer where you want to store the project. 
+3. Use cd to enter your project directory
+4. Install Composer Dependencies using ``` composer install ```
+5. Install npm dependencies using ``` npm install ```
+6. Create a copy of your .env file; .env files are not generally committed to source control for security reasons. But there is a .env.example which is a template of the .env file that the project expects us to have. Make a copy of the .env.example file and create a .env file that can start to fill out to do things like database configuration in the next few steps. ```cp .env.example .env```. This will create a copy of the .env.example file in your project and name the copy simply .env.
+7. Create an empty database for our application
+8. In the .env file, add database information to allow Laravel to connect to the database
+9. In the .env file fill in the ```DB_HOST```, ```DB_PORT```, ```DB_DATABASE```, ```DB_USERNAME```, and ```DB_PASSWORD``` options to match the credentials of the database you just created. This will allow us to run migrations in the database in the next step.
+10. Migrate the database 
+11. Here we don't need to seed the database.It would have been the next step
+12. run    ```php artisan serve``` to load the project
